@@ -35,6 +35,7 @@ const Hero = () => {
 )};
 
 function Rig() {
+  // Update the camera position based on mouse movement
   return useFrame((state, delta) => {
     easing.damp3(
       state.camera.position,
