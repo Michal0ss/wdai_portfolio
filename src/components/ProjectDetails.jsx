@@ -7,7 +7,7 @@ const ProjectDetails = ({title, description, subDescription, href, image, tags, 
     <div className='fixed inset-0 z-50 flex items-center justify-center w-full h-full overflow-hidden backdrop-blur-sm'>
         
         <motion.div className='relative max-w-2xl border shadow-sm rounded-2xl bg-gradient-to-l from-midnight to-navy border-white/10'
-        initial={{ scale: 0.8, opacity: 0 }}
+        initial={{ scale: 0.5, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}>
 
             <button  onClick={closeModal} className='absolute p-3 text-white bg-red-600 rounded-full top-4 right-4 hover:bg-red-700'>
