@@ -55,7 +55,7 @@ const About = () => {
             />
             <Card
               style={{ rotate: "20deg", top: "10%", left: "38%" }}
-              text="Cleen Code"
+              text="Clean Code"
               containerRef={grid2Container}
             />
             <Card
@@ -76,6 +76,11 @@ const About = () => {
             <Card
               style={{ rotate: "-25deg", top: "1%", left: "19%" }}
               image="assets/logos/git.svg"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{ rotate: "-65deg", top: "50%", left: "59%" }}
+              image="assets/logos/python.svg"
               containerRef={grid2Container}
             />
           </div>
