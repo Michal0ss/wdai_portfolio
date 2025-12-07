@@ -30,7 +30,7 @@ const HeroText = () => {
                         variants={variants}
                         transition={{delay:1.2}}
                     >
-                        A Developer, Entrepreneur <br /> With a Passion for Technology
+                        A Developer, Student <br /> With a Passion for Technology
                     </motion.p>
                     <motion.div
                         initial="hidden"

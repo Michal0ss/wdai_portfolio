@@ -211,7 +211,7 @@ export const experiences = [
     date: "Present",
     contents: [
       "Studying at AGH University, focusing on web development and software engineering.",
-      "Expanding knowledge in algorithms, TypeScript and modern frontend tooling.",
+      "Expanding knowledge in algorithms, Python, Java, React and modern frontend tooling.",
     ],
   },
   {
@@ -219,7 +219,7 @@ export const experiences = [
     job: "Private Tutor",
     date: "2022-Present",
     contents: [
-      "Providing math tutoring for high-school students for 3 years.",
+      "Providing math tutoring for college and high-school students for over 3 years.",
       "Teaching algebra, calculus and basic computer science concepts; preparing students for exams.",
     ],
   },
