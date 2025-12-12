@@ -4,6 +4,7 @@ import Hero from './sections/Hero.jsx'
 import About from './sections/About.jsx'
 import Projects from './sections/Projects.jsx'
 import Experiences from './sections/Experiences.jsx'
+import Contact from './sections/Contact.jsx'
 
 const App = () => {
   return (
@@ -13,13 +14,7 @@ const App = () => {
       <About />
       <Projects />
       <Experiences />
-      <section className='min-h-screen'/>
-      <section className='min-h-screen'/>
-      {/* about */}
-      {/* projects */}
-      {/* experience */}
-      {/* testimonial */}
-      {/* contact */}
+      <Contact/>
       {/* footer */}
     </div>
   )
