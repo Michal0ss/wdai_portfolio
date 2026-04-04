@@ -1,23 +1,65 @@
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const [isSending, setIsSending] = useState(false);
+  const pageLoadTimeRef = useRef(Date.now());
 
-  const sendEmail = (e) => {
+  const MIN_FILL_TIME_MS = 4000;
+  const SUBMIT_COOLDOWN_MS = 60000;
+  const SUBMIT_STORAGE_KEY = 'contact_last_submit_at';
+
+  const sendEmail = async (e) => {
     e.preventDefault();
+    if (isSending) return;
 
-    emailjs.sendForm(
-      'service_ugkmhxr',
-      'template_9vo5pce',
-      e.target,
-      'h9jYPFft_U1SdHN2p'
-    ).then(
-      () => {
-        alert("Wiadomość wysłana");
-      },
-      () => {
-        alert("Błąd podczas wysyłania");
-      }
-    );
+    const form = e.target;
+    const formData = new FormData(form);
+
+    // Honeypot field - bots often fill every input.
+    if (String(formData.get('company') || '').trim().length > 0) {
+      return;
+    }
+
+    // Very fast submit is usually automated traffic.
+    if (Date.now() - pageLoadTimeRef.current < MIN_FILL_TIME_MS) {
+      alert('Poczekaj chwilę i spróbuj ponownie.');
+      return;
+    }
+
+    const lastSubmitAt = Number(localStorage.getItem(SUBMIT_STORAGE_KEY) || 0);
+    if (Date.now() - lastSubmitAt < SUBMIT_COOLDOWN_MS) {
+      alert('Odczekaj chwilę przed kolejną wiadomością.');
+      return;
+    }
+
+    const userName = String(formData.get('user_name') || '').trim();
+    const message = String(formData.get('message') || '').trim();
+
+    if (userName.length < 2 || message.length < 10) {
+      alert('Uzupełnij poprawnie formularz.');
+      return;
+    }
+
+    setIsSending(true);
+
+    try {
+      await emailjs.sendForm(
+        'service_ugkmhxr',
+        'template_9vo5pce',
+        form,
+        'h9jYPFft_U1SdHN2p'
+      );
+
+      localStorage.setItem(SUBMIT_STORAGE_KEY, String(Date.now()));
+      alert('Wiadomość wysłana');
+      form.reset();
+      pageLoadTimeRef.current = Date.now();
+    } catch {
+      alert('Błąd podczas wysyłania');
+    } finally {
+      setIsSending(false);
+    }
   }
 
   return (
@@ -32,6 +74,14 @@ const Contact = () => {
         </div>
 
         <form className="w-full" onSubmit={sendEmail}>
+          <input
+            type="text"
+            name="company"
+            autoComplete="off"
+            tabIndex="-1"
+            className="hidden"
+            aria-hidden="true"
+          />
 
           <div className="mb-5">
             <label className="feild-label">Full Name</label>
@@ -58,8 +108,9 @@ const Contact = () => {
           </div>
 
           <button type="submit"
+            disabled={isSending}
             className="w-full px-1 py-3 text-lg text-center rounded-md cursor-pointer bg-radial from-lavender to-royal hover-animation">
-            Send
+            {isSending ? 'Sending...' : 'Send'}
           </button>
 
         </form>
