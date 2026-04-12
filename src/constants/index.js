@@ -1,26 +1,99 @@
 export const myProjects = [
   {
     id: 1,
-    title: "Allegro Sales Automation Bot",
-    description: "Allegro sales automation: labels, invoices, shipments, notifications.",
+    title: "Job Portal Fullstack Application",
+    description: "Fullstack job portal app with role-based accounts, recruiter profile management, dashboard and admin panel.",
     subDescription: [
-      "Built Allegro integration and order workflows.",
-      "Automated label printing and invoice generation.",
-      "Handled client acquisition and onboarding.",
+      "Built fullstack job portal application with: Backend: Spring Boot, Java Web. ",
+      "Framework: Spring MVC + Thymeleaf (server-side HTML rendering)",
+      "ORM: Spring Data JPA, Hibernate, MySQL",
+      "Security: Spring Security (BCrypt, authentication, authorization)",
+      "Implemented user registration/login, role-based flow (Recruiter / Job Seeker), profile data management and recruiter photo upload/display."
     ],
     href: "",
     logo: "",
-    image: "",
+    image: "/assets/projects/jobPortalProject.png",
+    tags: [
+      {
+        id: 1,
+        name: "Java",
+        path: "/assets/logos/java.svg",
+      },{
+        id: 2,
+        name: "Spring Boot",
+        path: "/assets/logos/spring-boot.svg",
+      },
+      {
+        id: 3,
+        name: "PostgreSQL",
+        path: "/assets/logos/postgresql.svg",
+      },{
+        id: 4,
+        name: "Spring Security",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Allegro Sales Automation Bot",
+    description: "Allegro sales automation: labels, invoices, shipments, notifications.",
+    subDescription: [
+      "Developed API integration with Allegro to optimize sales processes, including generating shipments, printing labels, and sending invoices. Designed and implemented backend logic for automation of e-commerce workflows. Worked with REST APIs and handled data exchange between external systems.",
+      "Acquired clients and maintained long-term relationships, delivering tailored technical solutions.",
+    ],
+    href: "",
+    logo: "",
+    image: "/assets/projects/allegroProject.png",
     tags: [
       {
         id: 1,
         name: "Python",
         path: "/assets/logos/python.svg",
       },
+      {
+        id: 2,
+        name: "FastAPI",
+        path: "/assets/logos/python.svg",
+      },
     ],
   },
   {
-    id: 2,
+    id: 3,
+    title: "Bank Fullstack Application",
+    description: "Fullstack banking app with account management, transactions and admin panel.",
+    subDescription: [
+      "Built fullstack banking application with: Backend: Spring Boot, Java Web",
+      "Framework: Spring MVC + Thymeleaf (renderowanie HTML)",
+      "Baza danych: PostgreSQL",
+      "ORM: Spring Data JPA/Hibernate",
+      "Security: Spring Security (BCrypt password encoding and authentication, authorization)",
+      "Implemented user authentication, accounts management, transaction features, Blik rendering."
+          ],
+    href: "",
+    logo: "",
+    image: "/assets/projects/bankProject.png",
+    tags: [
+      {
+        id: 1,
+        name: "Java",
+        path: "/assets/logos/java.svg",
+      },{
+        id: 2,
+        name: "Spring Boot",
+        path: "/assets/logos/spring-boot.svg",
+      },
+      {
+        id: 3,
+        name: "PostgreSQL",
+        path: "/assets/logos/postgresql.svg",
+      },{
+        id: 4,
+        name: "Spring Security",
+      },
+    ],
+  },
+  {
+    id: 5,
     title: "EPAM Course - Frontend Project",
     description: "EPAM course final: static site using vanilla JS, SCSS and HTML.",
     subDescription: [
@@ -55,7 +128,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "MathDuo - Tutoring Platform",
     description: "Tutoring site with calendar, contacts and maps for MathDuo.",
     subDescription: [
@@ -85,7 +158,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 4,
+    id: 6,
     title: "WordPress Site for Driving School",
     description: "WordPress site for a local driving school with registration form.",
     subDescription: [
@@ -120,37 +193,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 5,
-    title: "CarBuy Helper - Startup Website (in progress)",
-    description: "Startup site (TypeScript + React) to assist buying new cars; in progress.",
-    subDescription: [
-      "Built with TypeScript and React for scalability.",
-      "Integrated EmailJS for lead handling and emails.",
-      "Implemented complex preference forms and validation.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/AE.png",
-    tags: [
-      {
-        id: 1,
-        name: "TypeScript",
-        path: "/assets/logos/ts.svg",
-      },
-      {
-        id: 2,
-        name: "React",
-        path: "/assets/logos/react.svg",
-      },
-      {
-        id: 3,
-        name: "EmailJS",
-        path: "/assets/logos/emailjs.png",
-      },
-    ],
-  },
-  {
-    id: 6,
+    id: 7,
     title: "Personal Portfolio",
     description: "Personal portfolio showcasing 3D visuals, animations and contact flows.",
     subDescription: [
