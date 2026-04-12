@@ -59,6 +59,11 @@ const About = () => {
               containerRef={grid2Container}
             />
             <Card
+              style={{ rotate: "20deg", top: "10%", left: "12%" }}
+              text="Backend"
+              containerRef={grid2Container}
+            />
+            <Card
               style={{ rotate: "30deg", top: "70%", left: "70%" }}
               image="assets/logos/react.svg"
               containerRef={grid2Container}
@@ -81,6 +86,16 @@ const About = () => {
             <Card
               style={{ rotate: "-65deg", top: "50%", left: "59%" }}
               image="assets/logos/python.svg"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{ rotate: "-5deg", top: "50%", left: "0%" }}
+              image="assets/logos/java.svg"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{ rotate: "-5deg", top: "10%", left: "0%" }}
+              image="assets/logos/spring-boot.svg"
               containerRef={grid2Container}
             />
           </div>
@@ -111,9 +126,9 @@ const About = () => {
           <div className="z-10 w-[50%]">
             <p className="headText">Teck Stack</p>
             <p className="subtext">
-              I'm currently working on front-end dev projects using React.js and
-              TailwindCSS, TS. I'm looking forward to expand my knowlandge in Springboot.
-              I'm also familiar with Python (tkinter) and basics of SQL. I also did projects in Wordpress for clients.
+              I'm currently working on a complex fullstack application and collaborating with larger clients on real-world projects.
+              I use React.js, TailwindCSS and TypeScript on the frontend, and I am continuing to expand my knowledge of Spring Boot on the backend.
+              I'm also familiar with Python (FastAPI), relational databases and WordPress projects delivered for clients.
             </p>
           </div>
           <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
