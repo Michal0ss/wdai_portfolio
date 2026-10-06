@@ -1,5 +1,8 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { mySocials } from '../constants';
+
+const linkedIn = mySocials.find((social) => social.name === 'Linkedin');
 
 const Contact = () => {
   const [isSending, setIsSending] = useState(false);
@@ -63,8 +66,8 @@ const Contact = () => {
   }
 
   return (
-    <section className="relative flex items-center c-space section-spacing" id="contact">
-      <div className="flex flex-col items-center justify-center max-w-md mx-auto auto-border border-white/10 rounded 2-xl bg-primary">
+    <section className="relative pb-20 mt-8 c-space md:mt-12" id="contact">
+      <div className="max-w-4xl mx-auto">
 
         <div className="flex flex-col items-start w-full gap-5 mb-10">
           <h2 className="text-heading">Get in Touch</h2>
@@ -73,7 +76,8 @@ const Contact = () => {
           </p>
         </div>
 
-        <form className="w-full" onSubmit={sendEmail}>
+        <div className="grid items-start gap-8 md:grid-cols-5">
+        <form className="w-full md:col-span-3" onSubmit={sendEmail}>
           <input
             type="text"
             name="company"
@@ -114,6 +118,31 @@ const Contact = () => {
           </button>
 
         </form>
+
+        <a
+          href={linkedIn.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex flex-col gap-5 p-6 border md:col-span-2 rounded-2xl border-white/10 bg-gradient-to-b from-storm to-indigo hover-animation"
+        >
+          <div className="flex items-center justify-center rounded-xl size-14 bg-[#0A66C2]">
+            <img src={linkedIn.icon} alt="LinkedIn" className="size-7" />
+          </div>
+          <div>
+            <p className="text-xl font-medium">Michał Białas</p>
+            <p className="mt-1 text-sm text-neutral-400">
+              Backend Developer at Incat · CS student at AGH
+            </p>
+          </div>
+          <p className="text-neutral-400">
+            Prefer LinkedIn? Connect with me or send me a message there.
+          </p>
+          <span className="inline-flex items-center gap-1 font-medium text-white">
+            View my LinkedIn
+            <img src="assets/arrow-up.svg" className="size-4" />
+          </span>
+        </a>
+        </div>
       </div>
     </section>
   );
