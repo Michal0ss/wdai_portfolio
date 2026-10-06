@@ -13,7 +13,6 @@ export function Frameworks() {
     "sqlite",
     "tailwindcss",
     "vitejs",
-    "wordpress",
     
   ];
   return (

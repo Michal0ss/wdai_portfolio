@@ -2,7 +2,7 @@ import { useRef } from "react";
 import Card from "../components/Card";
 import { Globe } from "../components/globe";
 import CopyEmailButton from "../components/CopyEmailButton";
-import { Frameworks } from "../components/FrameWorks";
+import { Frameworks } from "../components/Frameworks";
 
 const About = () => {
   const grid2Container = useRef();
@@ -19,7 +19,7 @@ const About = () => {
           <div className="z-10">
             <p className="headtext">Hi nice to meet you i'm Michał</p>
             <p className="subtext">
-              For the last 2 years, I've been immersed in the world of software
+              For the last 2 years, I've been immersed in the world of software. For the last 4 months I've been working as a Fullstack Developer at Incat, a fintech company
             </p>
           </div>
           <div className="absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
@@ -74,11 +74,6 @@ const About = () => {
               containerRef={grid2Container}
             />
             <Card
-              style={{ rotate: "-45deg", top: "5%", left: "10%" }}
-              image="assets/logos/wordpress.svg"
-              containerRef={grid2Container}
-            />
-            <Card
               style={{ rotate: "-25deg", top: "1%", left: "19%" }}
               image="assets/logos/git.svg"
               containerRef={grid2Container}
@@ -126,9 +121,9 @@ const About = () => {
           <div className="z-10 w-[50%]">
             <p className="headText">Teck Stack</p>
             <p className="subtext">
-              I'm currently working on a complex fullstack application and collaborating with larger clients on real-world projects.
-              I use React.js, TailwindCSS and TypeScript on the frontend, and I am continuing to expand my knowledge of Spring Boot on the backend.
-              I'm also familiar with Python (FastAPI), relational databases and WordPress projects delivered for clients.
+              I work as a Fullstack Developer at Incat (fintech), building backend services and web features for financial products.
+              On the backend I use Spring Boot, Python (FastAPI) and relational databases (PostgreSQL), and on the frontend React.js, Next.js, TailwindCSS and TypeScript.
+              I also took part in the HackYeah 2026 hackathon and build my own products, like the Trackly Chrome extension.
             </p>
           </div>
           <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
