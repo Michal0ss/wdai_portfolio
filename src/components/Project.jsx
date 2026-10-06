@@ -7,8 +7,10 @@ const Project = ({title, description, subDescription, href, image, gallery, tags
   return (
     <>
         <div className='flex-wrap items-center justify-between py-10 space-y-14 sm:flex sm:space-y-0'
-        onMouseEnter={() => setPreview(image)}
-        onMouseLeave={() => setPreview(null)}>
+        // Hover preview only for a real mouse: on touch screens a tap would also
+        // fire it and the image would stay on top of the opened project.
+        onPointerEnter={(e) => e.pointerType === 'mouse' && setPreview(image)}
+        onPointerLeave={(e) => e.pointerType === 'mouse' && setPreview(null)}>
 
             <p className='text-2xl'>{title}</p>
             <div className='flex flex-wrap gap-x-5 gap-y-1 mt-2 text-sand'>
