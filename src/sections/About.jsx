@@ -19,7 +19,7 @@ const About = () => {
           <div className="z-10">
             <p className="headtext">Hi nice to meet you i'm Michał</p>
             <p className="subtext">
-              For the last 2 years, I've been immersed in the world of software. For the last 4 months I've been working as a Fullstack Developer at Incat, a fintech company
+              For the last 2 years, I've been immersed in the world of software. For the last 4 months I've been working as a Backend Developer at Incat, a fintech company
             </p>
           </div>
           <div className="absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
@@ -121,7 +121,7 @@ const About = () => {
           <div className="z-10 w-[50%]">
             <p className="headText">Teck Stack</p>
             <p className="subtext">
-              I work as a Fullstack Developer at Incat (fintech), building backend services and web features for financial products.
+              I work as a Backend Developer at Incat (fintech), building backend services for financial products.
               On the backend I use Spring Boot, Python (FastAPI) and relational databases (PostgreSQL), and on the frontend React.js, Next.js, TailwindCSS and TypeScript.
               I also took part in the HackYeah 2026 hackathon and build my own products, like the Trackly Chrome extension.
             </p>

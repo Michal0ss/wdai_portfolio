@@ -355,12 +355,12 @@ export const mySocials = [
 
 export const experiences = [
   {
-    title: "Fullstack Developer",
+    title: "Backend Developer",
     job: "Incat (FinTech)",
     date: "06.2026-Present",
     contents: [
-      "Working for 4 months as a Fullstack Developer at Incat, a company building fintech software.",
-      "Developing and maintaining backend services, APIs, integrations and frontend features for financial products.",
+      "Working for 4 months as a Backend Developer at Incat, a company building fintech software.",
+      "Developing and maintaining backend services, APIs and integrations for financial products.",
     ],
   },
   {
