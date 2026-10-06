@@ -151,6 +151,25 @@ export const myProjects = [
   },
   {
     id: 4,
+    title: "rusted-db-engine - Database Engine in Rust",
+    description: "Database engine written in Rust.",
+    subDescription: [
+      "Database engine implemented in Rust, a systems language with memory safety guaranteed at compile time.",
+      "Low-level backend work: how a database stores and processes data under the hood, beyond using one through an ORM.",
+    ],
+    href: "",
+    logo: "",
+    image: "/assets/projects/rusted-db-engine.png",
+    tags: [
+      {
+        id: 1,
+        name: "Rust",
+        path: "/assets/logos/rust.svg",
+      },
+    ],
+  },
+  {
+    id: 5,
     title: "Job Portal Fullstack Application",
     description: "Job portal web app with registration, login and role-based flow for recruiters and job seekers.",
     subDescription: [
@@ -192,25 +211,6 @@ export const myProjects = [
         id: 6,
         name: "Bootstrap",
         path: "/assets/logos/bootstrap.svg",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "rusted-db-engine - Database Engine in Rust",
-    description: "Database engine written in Rust.",
-    subDescription: [
-      "Database engine implemented in Rust, a systems language with memory safety guaranteed at compile time.",
-      "Low-level backend work: how a database stores and processes data under the hood, beyond using one through an ORM.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/rusted-db-engine.png",
-    tags: [
-      {
-        id: 1,
-        name: "Rust",
-        path: "/assets/logos/rust.svg",
       },
     ],
   },
