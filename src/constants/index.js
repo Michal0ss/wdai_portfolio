@@ -1,5 +1,79 @@
 export const myProjects = [
   {
+    id: 8,
+    title: "TogetherPlan - Shared Planning App",
+    description: "Web and mobile app for planning time together, with a Couple mode and a Friends mode.",
+    subDescription: [
+      "Fullstack app built with Next.js (App Router), TypeScript, Prisma ORM and PostgreSQL (Supabase).",
+      "Couple mode: shared calendar, availability, date proposals (accept/reject), trips with notes and checklists.",
+      "Friends mode: group calendar, invitations, voting on dates, shared events, trips and expense settlements.",
+      "Month / week / day / list views, drag & drop, .ics export to the device calendar and in-app notifications.",
+      "Google sign-in with Auth.js, Sign in with Apple and native iOS and Android apps.",
+    ],
+    href: "",
+    logo: "",
+    image: "/assets/projects/togetherplan.png",
+    tags: [
+      {
+        id: 1,
+        name: "TypeScript",
+        path: "/assets/logos/ts.svg",
+      },
+      {
+        id: 2,
+        name: "React",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 3,
+        name: "PostgreSQL",
+        path: "/assets/logos/postgresql.svg",
+      },
+      {
+        id: 4,
+        name: "Tailwind CSS",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+    ],
+  },
+  {
+    id: 9,
+    title: "hackGYM - HackYeah Hackathon App",
+    description: "iPhone app built at the HackYeah hackathon (Sport & Healthcare): AI trainer, workout plan and live technique analysis.",
+    subDescription: [
+      "Team project built at HackYeah: an iOS app (SwiftUI) that combines a training plan, a coach and an advisor.",
+      "On-device exercise technique scoring from video with Apple Vision: rep counting, 0-100 score and joint angle chart.",
+      "Daily recommendation (train / go lighter / rest) based on recovery data from Apple Health and the user's check-in.",
+      "Stateless FastAPI backend: plan generation, AI trainer chat with tools and a RAG knowledge base (Google Gemini).",
+      "Privacy by design: video, poses and health data stay on the phone; optional account synced with Supabase.",
+    ],
+    href: "https://github.com/Michal0ss/hackYeah_larp",
+    logo: "",
+    image: "/assets/projects/hackgym.png",
+    tags: [
+      {
+        id: 1,
+        name: "Python",
+        path: "/assets/logos/python.svg",
+      },
+      {
+        id: 2,
+        name: "FastAPI",
+        path: "/assets/logos/python.svg",
+      },
+      {
+        id: 3,
+        name: "PostgreSQL",
+        path: "/assets/logos/postgresql.svg",
+      },
+      {
+        id: 4,
+        name: "Git",
+        path: "/assets/logos/git.svg",
+      },
+    ],
+  },
+  {
     id: 1,
     title: "Job Portal Fullstack Application",
     description: "Fullstack job portal app with role-based accounts, recruiter profile management, dashboard and admin panel.",
@@ -248,6 +322,15 @@ export const mySocials = [
 ];
 
 export const experiences = [
+  {
+    title: "Backend Developer",
+    job: "Incat (FinTech)",
+    date: "06.2026-Present",
+    contents: [
+      "Working for 4 months as a Backend Developer at Incat, a company building fintech software.",
+      "Developing and maintaining backend services, APIs and integrations for financial products.",
+    ],
+  },
   {
     title: "Student",
     job: "AGH University",
