@@ -2,7 +2,7 @@ import React from 'react'
 import ProjectDetails from './ProjectDetails.jsx'
 import {motion} from 'motion/react'
 
-const Project = ({title, description, subDescription, href, image, tags, setPreview,}) => {
+const Project = ({title, description, subDescription, href, image, gallery, tags, setPreview,}) => {
     const[isHidden, setIsHidden] = React.useState(false); 
   return (
     <>
@@ -11,7 +11,7 @@ const Project = ({title, description, subDescription, href, image, tags, setPrev
         onMouseLeave={() => setPreview(null)}>
 
             <p className='text-2xl'>{title}</p>
-            <div className='flex gap-5 mt-2 text-sand'>
+            <div className='flex flex-wrap gap-x-5 gap-y-1 mt-2 text-sand'>
                 {tags.map((tag) => (
                     <span key={tag.id}>{tag.name}</span>
                 ))}
@@ -29,6 +29,7 @@ const Project = ({title, description, subDescription, href, image, tags, setPrev
             subDescription={subDescription} 
             href={href} 
             image={image} 
+            gallery={gallery} 
             tags={tags} 
             closeModal={() => setIsHidden(false)}/>
         )}
