@@ -38,10 +38,10 @@ export const myProjects = [
   },
   {
     id: 9,
-    title: "hackGYM - HackYeah Hackathon App",
+    title: "hackGYM - HackYeah 2026 Hackathon App",
     description: "iPhone app built at the HackYeah hackathon (Sport & Healthcare): AI trainer, workout plan and live technique analysis.",
     subDescription: [
-      "Team project built at HackYeah: an iOS app (SwiftUI) that combines a training plan, a coach and an advisor.",
+      "Built in a 5-person team during the HackYeah 2026 hackathon (Sport & Healthcare category): an iOS app (SwiftUI) that combines a training plan, a coach and an advisor.",
       "On-device exercise technique scoring from video with Apple Vision: rep counting, 0-100 score and joint angle chart.",
       "Daily recommendation (train / go lighter / rest) based on recovery data from Apple Health and the user's check-in.",
       "Stateless FastAPI backend: plan generation, AI trainer chat with tools and a RAG knowledge base (Google Gemini).",
@@ -70,6 +70,43 @@ export const myProjects = [
         id: 4,
         name: "Git",
         path: "/assets/logos/git.svg",
+      },
+    ],
+  },
+  {
+    id: 10,
+    title: "Trackly - Subscription Tracker Chrome Extension",
+    description: "Chrome extension (published in the Chrome Web Store) that detects subscriptions on pricing pages and tracks their costs.",
+    subDescription: [
+      "Detects the plan, price and billing cycle on the pricing pages of 35+ services (Netflix, Spotify, ChatGPT and more), locally in the browser.",
+      "Popup with monthly and yearly cost per currency, upcoming renewals and reminders 1, 3 or 7 days before a payment.",
+      "FastAPI backend deployed on Vercel: Google sign-in, JWT, subscriptions API, PostgreSQL (Supabase) or SQLite.",
+      "Same recogniser in JavaScript and Python, kept consistent by tests; CI with GitHub Actions.",
+      "Privacy first: page content and browsing history never leave the browser. Available in Polish and English.",
+    ],
+    href: "https://tracklyapp.pl",
+    logo: "",
+    image: "/assets/projects/trackly.png",
+    tags: [
+      {
+        id: 1,
+        name: "JavaScript",
+        path: "/assets/logos/javascript.svg",
+      },
+      {
+        id: 2,
+        name: "Python",
+        path: "/assets/logos/python.svg",
+      },
+      {
+        id: 3,
+        name: "FastAPI",
+        path: "/assets/logos/python.svg",
+      },
+      {
+        id: 4,
+        name: "PostgreSQL",
+        path: "/assets/logos/postgresql.svg",
       },
     ],
   },
@@ -233,10 +270,10 @@ export const myProjects = [
   },
   {
     id: 6,
-    title: "WordPress Site for Driving School",
-    description: "WordPress site for a local driving school with registration form.",
+    title: "Driving School Website",
+    description: "Website for a local driving school with a registration form.",
     subDescription: [
-      "Built WP site with signup form and contact details.",
+      "Built a website with a signup form and contact details.",
       "Led client communication and UI improvements.",
       "Configured hosting and DNS; delivered production-ready site.",
     ],
@@ -246,21 +283,16 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "WordPress",
-        path: "/assets/logos/wordpress.svg",
-      },
-      {
-        id: 2,
         name: "HTML5",
         path: "/assets/logos/html5.svg",
       },
       {
-        id: 3,
+        id: 2,
         name: "CSS3",
         path: "/assets/logos/css3.svg",
       },
       {
-        id: 4,
+        id: 3,
         name: "Hosting",
         path: "/assets/logos/hosting.svg",
       },
@@ -323,12 +355,21 @@ export const mySocials = [
 
 export const experiences = [
   {
-    title: "Backend Developer",
+    title: "Fullstack Developer",
     job: "Incat (FinTech)",
     date: "06.2026-Present",
     contents: [
-      "Working for 4 months as a Backend Developer at Incat, a company building fintech software.",
-      "Developing and maintaining backend services, APIs and integrations for financial products.",
+      "Working for 4 months as a Fullstack Developer at Incat, a company building fintech software.",
+      "Developing and maintaining backend services, APIs, integrations and frontend features for financial products.",
+    ],
+  },
+  {
+    title: "Hackathon Participant",
+    job: "HackYeah 2026",
+    date: "10.2026",
+    contents: [
+      "Took part in HackYeah 2026, one of the biggest hackathons in Europe, in the Sport & Healthcare category.",
+      "Built hackGYM in a 5-person team: an iPhone app with live exercise technique analysis, an AI trainer and a FastAPI backend.",
     ],
   },
   {
