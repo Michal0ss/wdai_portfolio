@@ -197,6 +197,25 @@ export const myProjects = [
   },
   {
     id: 5,
+    title: "rusted-db-engine - Database Engine in Rust",
+    description: "Database engine written in Rust.",
+    subDescription: [
+      "Database engine implemented in Rust, a systems language with memory safety guaranteed at compile time.",
+      "Low-level backend work: how a database stores and processes data under the hood, beyond using one through an ORM.",
+    ],
+    href: "",
+    logo: "",
+    image: "/assets/projects/rusted-db-engine.png",
+    tags: [
+      {
+        id: 1,
+        name: "Rust",
+        path: "/assets/logos/rust.svg",
+      },
+    ],
+  },
+  {
+    id: 6,
     title: "Allegro Sales Automation Bot",
     description: "Allegro sales automation: labels, invoices, shipments, notifications.",
     subDescription: [
@@ -220,7 +239,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: "Bank Database Application",
     description: "Banking web app for managing accounts and payment cards and making transfers, with business logic in the database.",
     subDescription: [
@@ -262,7 +281,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     title: "Personal Portfolio",
     description: "This portfolio: one-page site with 3D visuals, animations and a contact form.",
     subDescription: [
