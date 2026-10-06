@@ -15,12 +15,11 @@ export const myProjects = [
     logo: "",
     image: "/assets/projects/togetherplan.png",
     gallery: [
-      "/assets/projects/togetherplan/01-dashboard.jpg",
-      "/assets/projects/togetherplan/02-kalendarz.jpg",
-      "/assets/projects/togetherplan/03-dostepnosc.jpg",
-      "/assets/projects/togetherplan/04-wyjazd.jpg",
-      "/assets/projects/togetherplan/05-rozliczenia.jpg",
-      "/assets/projects/togetherplan/06-bilety.jpg",
+      "/assets/projects/togetherplan/01-start.jpg",
+      "/assets/projects/togetherplan/02-tryby.jpg",
+      "/assets/projects/togetherplan/03-kalendarz.jpg",
+      "/assets/projects/togetherplan/04-glosowanie.jpg",
+      "/assets/projects/togetherplan/05-wyjazd.jpg",
     ],
     tags: [
       {
