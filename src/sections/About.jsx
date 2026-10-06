@@ -19,7 +19,7 @@ const About = () => {
           <div className="z-10">
             <p className="headtext">Hi nice to meet you i'm Michał</p>
             <p className="subtext">
-              For the last 2 years, I've been immersed in the world of software. For the last 4 months I've been working as a Backend Developer at Incat, a fintech company
+              I'm a 3rd-year Computer Science student and a Backend Developer by profession, working at Incat, a fintech company. I have fullstack knowledge and I'm now growing towards Machine Learning
             </p>
           </div>
           <div className="absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
@@ -100,7 +100,7 @@ const About = () => {
           <div className="z-10 w-[50%]">
             <p className="headtext">University</p>
             <p className="subtext">
-              I'm currently pursuing a degree in Computer Science at the <br /> <b>AGH</b> in Cracow
+              I'm a 3rd-year Computer Science student at the <br /> <b>AGH</b> in Cracow
             </p>
           </div>
           <figure className="absolute left-[20%] top-[10%]">
@@ -121,9 +121,9 @@ const About = () => {
           <div className="z-10 w-[50%]">
             <p className="headText">Teck Stack</p>
             <p className="subtext">
-              I work as a Backend Developer at Incat (fintech), building backend services for financial products.
-              On the backend I use Spring Boot, Python (FastAPI) and relational databases (PostgreSQL), and on the frontend React.js, Next.js, TailwindCSS and TypeScript.
-              I also took part in the HackYeah 2026 hackathon and build my own products, like the Trackly Chrome extension.
+              Backend is my profession: Spring Boot, Python (FastAPI) and PostgreSQL.
+              I also know the frontend (React, Next.js, TypeScript, Tailwind), so I build fullstack apps.
+              Now I'm growing towards Machine Learning.
             </p>
           </div>
           <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">

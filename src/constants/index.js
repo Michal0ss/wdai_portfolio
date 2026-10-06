@@ -448,12 +448,12 @@ export const experiences = [
     ],
   },
   {
-    title: "Student",
+    title: "Computer Science Student (3rd year)",
     job: "AGH University",
     date: "Present",
     contents: [
-      "Studying at AGH University, focusing on web development and software engineering.",
-      "Expanding knowledge in algorithms, Python, Java, React and modern frontend tooling.",
+      "3rd-year Computer Science student at AGH University of Krakow.",
+      "Building knowledge in algorithms, databases and software engineering, and developing towards Machine Learning.",
     ],
   },
   {
