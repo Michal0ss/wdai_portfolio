@@ -4,6 +4,31 @@ import { Globe } from "../components/globe";
 import CopyEmailButton from "../components/CopyEmailButton";
 import { Frameworks } from "../components/Frameworks";
 
+// Draggable cards in the "DEVELOPMENT" tile, scattered with uneven angles.
+const skillCards = [
+  { text: "Backend", style: { rotate: "-12deg", top: "6%", left: "2%" } },
+  { text: "REST APIs", style: { rotate: "23deg", top: "4%", left: "55%" } },
+  { text: "Clean Code", style: { rotate: "-37deg", top: "30%", left: "30%" } },
+  { text: "Databases", style: { rotate: "8deg", top: "22%", left: "62%" } },
+  { text: "Algorithms", style: { rotate: "61deg", top: "48%", left: "2%" } },
+  { text: "Machine Learning", style: { rotate: "-19deg", top: "56%", left: "40%" } },
+  { text: "Optimization", style: { rotate: "-71deg", top: "45%", left: "74%" } },
+  { text: "Design Principles", style: { rotate: "14deg", top: "78%", left: "8%" } },
+];
+
+const logoCards = [
+  { logo: "java.svg", style: { rotate: "-18deg", top: "6%", left: "43%" } },
+  { logo: "spring-boot.svg", style: { rotate: "27deg", top: "26%", left: "4%" } },
+  { logo: "python.svg", style: { rotate: "-42deg", top: "68%", left: "72%" } },
+  { logo: "fastapi.svg", style: { rotate: "11deg", top: "2%", left: "31%" } },
+  { logo: "postgresql.svg", style: { rotate: "-9deg", top: "74%", left: "52%" } },
+  { logo: "ts.svg", style: { rotate: "34deg", top: "21%", left: "21%" } },
+  { logo: "react.svg", style: { rotate: "-56deg", top: "12%", left: "84%" } },
+  { logo: "nextjs.svg", style: { rotate: "19deg", top: "84%", left: "64%" } },
+  { logo: "rust.svg", style: { rotate: "-28deg", top: "62%", left: "24%" } },
+  { logo: "git.svg", style: { rotate: "47deg", top: "82%", left: "86%" } },
+];
+
 const About = () => {
   const grid2Container = useRef();
   return (
@@ -33,66 +58,12 @@ const About = () => {
             <p className="flex items-end text-5xl text-gray-500">
               DEVELOPMENT
             </p>
-            <Card
-              style={{ rotate: "75deg", top: "30%", left: "20%" }}
-              text="Algorythms"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-30deg", top: "60%", left: "45%" }}
-              text="Web dev"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "90deg", bottom: "30%", left: "70%" }}
-              text="Optymization"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-45deg", top: "55%", left: "0%" }}
-              text="Design Principles"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "20deg", top: "10%", left: "38%" }}
-              text="Clean Code"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "20deg", top: "10%", left: "12%" }}
-              text="Backend"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "30deg", top: "70%", left: "70%" }}
-              image="assets/logos/react.svg"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-45deg", top: "70%", left: "25%" }}
-              image="assets/logos/javascript.svg"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-25deg", top: "1%", left: "19%" }}
-              image="assets/logos/git.svg"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-65deg", top: "50%", left: "59%" }}
-              image="assets/logos/python.svg"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-5deg", top: "50%", left: "0%" }}
-              image="assets/logos/java.svg"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-5deg", top: "10%", left: "0%" }}
-              image="assets/logos/spring-boot.svg"
-              containerRef={grid2Container}
-            />
+            {skillCards.map(({ text, style }) => (
+              <Card key={text} style={style} text={text} containerRef={grid2Container} />
+            ))}
+            {logoCards.map(({ logo, style }) => (
+              <Card key={logo} style={style} image={`assets/logos/${logo}`} containerRef={grid2Container} />
+            ))}
           </div>
         </div>
         {/* Grid 3 */}
