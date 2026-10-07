@@ -52,7 +52,7 @@ const HeroText = () => {
             </div>
 
             {/* Mobile View */}
-            <div className='flex flex-col space-y-6 md:hidden'>
+            <div className='flex flex-col space-y-6 md:hidden drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]'>
                 <motion.p className='text-4xl font-medium'
                     initial="hidden"
                     animate="visible"
@@ -73,12 +73,20 @@ const HeroText = () => {
                         transition={{delay:1.4}}>
                         <FlipWords words={wordsmobile} className="font-black text-white text-4xl" />
                     </motion.div>
-                    <motion.p className='text-2xl font-black text-neutral-300'
+                    <motion.div className='mt-5'
                         initial="hidden"
                         animate="visible"
                         variants={variants}
                         transition={{delay:1.5}}>
-                        WebApps & Mobile Apps
+                        <p className='text-3xl font-black text-white'>Backend Developer</p>
+                        <p className='mt-2 text-sm font-semibold tracking-[0.25em] uppercase text-neutral-100'>in the FinTech field</p>
+                    </motion.div>
+                    <motion.p className='mt-4 text-2xl font-black text-neutral-300'
+                        initial="hidden"
+                        animate="visible"
+                        variants={variants}
+                        transition={{delay:1.6}}>
+                        & Mobile Apps
                     </motion.p>
                 </div>
             </div>
